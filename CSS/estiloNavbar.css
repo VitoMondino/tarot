@@ -1,0 +1,29 @@
+body {
+    background-image: url('/imagenes/'); /* Asegúrate de que el nombre del archivo y la extensión sean correctos */
+    background-size: cover; /* Esta propiedad hace que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en la página */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes moveLeftRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+.logo-move {
+    animation: moveLeftRight 2.5s ease-in-out infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
